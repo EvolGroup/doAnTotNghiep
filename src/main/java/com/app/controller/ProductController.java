@@ -10,4 +10,9 @@ public class ProductController {
     public String detail() {
         return "user/product/detail";
     }
+    
+    @RequestMapping("/product")
+    public String product() {
+    	return "user/product/index";
+    }
 }

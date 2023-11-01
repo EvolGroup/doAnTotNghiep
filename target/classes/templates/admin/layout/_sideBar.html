@@ -1,93 +1,174 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-    xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
 
 <body>
-    <ul th:fragment="sidebar" class="navbar-nav w-100 bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar"
-        >
+	<ul th:fragment="sidebar" class="navbar-nav w-100 bg-gradient-primary sidebar sidebar-dark accordion"
+		id="accordionSidebar">
 
-        <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
-            <div class="sidebar-brand-text mx-3">EVOL ADMIN</div>
-        </a>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
-        <!-- Divider -->
-        <hr class="sidebar-divider">
-
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Interface
-        </div>
-	
-		  <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
-        <!-- Divider -->
-        <hr class="sidebar-divider">
-
+		<!-- Sidebar - Brand -->
+		<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
+			<div class="sidebar-brand-text mx-2">EVOL ADMIN</div>
+		</a>
+		<hr class="bg-light">
+		
 		<div class="accordion" id="accordionExample">
 			<div class="accordion-item">
-				<h2 class="accordion-header" id="headingOne">
-					<button class="accordion-button" type="button"
-						data-bs-toggle="collapse" data-bs-target="#collapseOne"
-						aria-expanded="true" aria-controls="collapseOne">
-						Quản lí sản phẩm</button>
-				</h2>
-				<div id="collapseOne" class="accordion-collapse collapse show"
-					aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			  <h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				  Quản lý sản phẩm
+				</button>
+			  </h2>
+			  <div id="collapseOne" class="accordion-collapse collapse show rounded" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-header text-uppercase ms-3 fw-bold">Quản lý sản phẩm</div>
 					<div class="accordion-body">
-						<a href="/admin/product/view">Products</a>
+
 					</div>
-				</div>
+			  </div>
 			</div>
 			<div class="accordion-item">
-				<h2 class="accordion-header" id="headingTwo">
-					<button class="accordion-button collapsed" type="button"
-						data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-						aria-expanded="false" aria-controls="collapseTwo">
-						2</button>
-				</h2>
-				<div id="collapseTwo" class="accordion-collapse collapse"
-					aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-					<div class="accordion-body">
-						<a href="/admin/product/view">Products</a>
-					</div>
+			  <h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				  Quản lý đơn hàng
+				</button>
+			  </h2>
+			  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+				  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
 				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingThree">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				  Kế toán
+				</button>
+			  </h2>
+			  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+				  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				</div>
+			  </div>
 			</div>
 			<div class="accordion-item">
 				<h2 class="accordion-header" id="headingThree">
-					<button class="accordion-button collapsed" type="button"
-						data-bs-toggle="collapse" data-bs-target="#collapseThree"
-						aria-expanded="false" aria-controls="collapseThree">
-						3</button>
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Phản hồi
+				  </button>
 				</h2>
-				<div id="collapseThree" class="accordion-collapse collapse"
-					aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-					<div class="accordion-body">
-						<a href="/admin/product/view">Products</a>
-					</div>
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				  <div class="accordion-body">
+					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				  </div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="headingThree">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Phân quyền người dùng
+				  </button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				  <div class="accordion-body">
+					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				  </div>
+				</div>
+			  </div>
+			  <div class="accordion-item">
+				<h2 class="accordion-header" id="headingThree">
+				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Thống kê
+				  </button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				  <div class="accordion-body">
+					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  
+		<!-- <li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct"
+				aria-expanded="false" aria-controls="collapseProduct">
+				<i class="bi bi-card-list"></i>
+				<span>Quản lý sản phẩm</span>
+			</a>
+			<div id="collapseProduct" class="collapse show" aria-labelledby="headingBootstrap"
+				data-parent="#accordionSidebar">
+				<div class="bg-white py-2 collapse-inner rounded">
+					<h6 class="collapse-header text-uppercase">Quản lý sản phẩm</h6>
+					<a class="collapse-item" href="alerts.html">Danh sách sản phẩm</a>
+					<a class="collapse-item" href="buttons.html">Thao tác</a>
 				</div>
 			</div>
-		</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOrder"
+				aria-expanded="false" aria-controls="collapseBootstrap">
+				<i class="bi bi-card-list"></i>
+				<span>Quản lý đơn hàng</span>
+			</a>
+			<div id="collapseOrder" class="collapse show" aria-labelledby="headingBootstrap"
+				data-parent="#accordionSidebar">
+				<div class="bg-white py-2 collapse-inner rounded">
+					<h6 class="collapse-header text-uppercase">Quản lý đơn hàng</h6>
+					<a class="collapse-item" href="alerts.html">Tất cả đơn hàng</a>
+					<a class="collapse-item" href="buttons.html">Chờ xác nhận</a>
+					<a class="collapse-item" href="buttons.html">Đang chuẩn bị hàng</a>
+					<a class="collapse-item" href="buttons.html">Đang giao</a>
+					<a class="collapse-item" href="buttons.html">Đã hoàn thành</a>
+					<a class="collapse-item" href="buttons.html">Bị hủy</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+				aria-expanded="false" aria-controls="collapseBootstrap">
+				<i class="bi bi-card-list"></i>
+				<span>Kế toán</span>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+				aria-expanded="false" aria-controls="collapseBootstrap">
+				<i class="bi bi-card-list"></i>
+				<span>Phản hồi</span>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+				aria-expanded="false" aria-controls="collapseBootstrap">
+				<i class="bi bi-card-list"></i>
+				<span>Phân quyền người dùng</span>
+			</a>
+			<div id="collapseBootstrap" class="collapse show" aria-labelledby="headingBootstrap"
+				data-parent="#accordionSidebar">
+				<div class="bg-white py-2 collapse-inner rounded">
+					<h6 class="collapse-header text-uppercase">Phân quyền người dùng</h6>
+					<a class="collapse-item" href="alerts.html">Danh sách người dùng</a>
+					<a class="collapse-item" href="buttons.html">Phân quyền</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+				aria-expanded="false" aria-controls="collapseBootstrap">
+				<i class="bi bi-card-list"></i>
+				<span>Thống kê</span>
+			</a> 
+		</li>-->
 
-		<!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
 
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
 
-    </ul>
+
+	</ul>
 </body>
 
 </html>

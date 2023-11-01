@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Sản phẩm</title>
+</head>
+
+<body>
+    <main>
+        <div style="margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                width: 1300px;" class="page">
+            <div class="row mb-2">
+                <div class="col-md-3 bg-light">
+                    <div class="title mt-2 text-uppercase fw-bold">Bộ lọc tìm kiếm</div>
+                    <div class="filter-category mt-2">
+                        <p class="mb-1">Theo danh mục</p>
+                        <form action="">
+                            <div class="mb-1">
+                                <input type="checkbox" value="" name="">
+                                <label>Áo khoác</label>
+                            </div>
+                            <div class="mb-1">
+                                <input type="checkbox" value="" name="">
+                                <label>Quần</label>
+                            </div>
+                            <div class="mb-1">
+                                <input type="checkbox" value="" name="">
+                                <label>Túi sách</label>
+                            </div>
+                            <div class="mb-1">
+                                <input type="checkbox" value="" name="">
+                                <label>Đồng hồ</label>
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="cost">
+                        <p class="mb-1">Khoảng giá</p>
+                        <div class="row price">
+                            <div class="col ">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                            <div class="col ">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn mt-2" style="background-color:  #7F7FD5; color: white;">Áp dụng</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="rank">
+                        <p class="mb-1">Đánh giá</p>
+                        <li style="list-style-type: none;">
+                            <a href="#">
+                                <span>5.0</span>
+                                <i class="bi bi-star-fill"></i>
+                            </a>
+                        </li>
+                        <li style="list-style-type: none;">
+                            <a href="#">
+                                <span>5.0</span>
+                                <i class="bi bi-star-fill "></i>
+                            </a>
+                        </li>
+                    </div>
+                    <hr>
+                    <button class="btn" style="background-color: red; color: white;">Xóa bộ lọc</button>
+                </div>
+                <div class="col-md-9">
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col">
+                            <div class="card border shadow-sm bg-body rounded">
+                                <div style="height: 180px;">
+                                    <img src="./images/product/ao.webp" class="card-img-top border border-bottom"
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-wrap--2">Áo thun aaaaaaaaaabbbbbbbbbbbaaaaaaaaaa</p>
+                                    <div class="status">
+                                        <span><i class="bi bi-star-fill"></i> 4.9</span>
+                                        <div class="vr"></div>
+                                        <span>đã bán 216</span>
+                                    </div>
+                                    <div class="price text-danger">₫ 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border shadow-sm bg-body rounded">
+                                <div style="height: 180px;">
+                                    <img src="./images/product/product1.png" class="card-img-top border border-bottom"
+                                        style="height: 180px;" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-wrap--2">Áo thun aaaaaaaaaabbbbbbbbbbbaaaaaaaaaa</p>
+                                    <div class="status">
+                                        <span><i class="bi bi-star-fill"></i> 4.9</span>
+                                        <div class="vr"></div>
+                                        <span>đã bán 216</span>
+                                    </div>
+                                    <div class="price text-danger">₫ 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border shadow-sm bg-body rounded">
+                                <div style="height: 180px;">
+                                    <img src="./images/product/mota.png" class="card-img-top border border-bottom"
+                                        style="height: 180px;" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-wrap--2">Áo thun aaaaaaaaaabbbbbbbbbbbaaaaaaaaaa</p>
+                                    <div class="status">
+                                        <span><i class="bi bi-star-fill "></i> 4.9</span>
+                                        <div class="vr"></div>
+                                        <span>đã bán 216</span>
+                                    </div>
+                                    <div class="price text-danger">₫ 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border shadow-sm bg-body rounded">
+                                <div style="height: 180px;">
+                                    <img src="./images/product/ao.webp" class="card-img-top border border-bottom"
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-wrap--2">Áo thun aaaaaaaaaabbbbbbbbbbbaaaaaaaaaa</p>
+                                    <div class="status">
+                                        <span><i class="bi bi-star-fill"></i> 4.9</span>
+                                        <div class="vr"></div>
+                                        <span>đã bán 216</span>
+                                    </div>
+                                    <div class="price text-danger">₫ 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border shadow-sm bg-body rounded">
+                                <div style="height: 180px;">
+                                    <img src="./images/product/ao.webp" class="card-img-top border border-bottom"
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-wrap--2">Áo thun aaaaaaaaaabbbbbbbbbbbaaaaaaaaaa</p>
+                                    <div class="status">
+                                        <span><i class="bi bi-star-fill"></i> 4.9</span>
+                                        <div class="vr"></div>
+                                        <span>đã bán 216</span>
+                                    </div>
+                                    <div class="price text-danger">₫ 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border shadow-sm bg-body rounded">
+                                <div style="height: 180px;">
+                                    <img src="./images/product/ao.webp" class="card-img-top border border-bottom"
+                                        alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-wrap--2">Áo thun aaaaaaaaaabbbbbbbbbbbaaaaaaaaaa</p>
+                                    <div class="status">
+                                        <span><i class="bi bi-star-fill"></i> 4.9</span>
+                                        <div class="vr"></div>
+                                        <span>đã bán 216</span>
+                                    </div>
+                                    <div class="price text-danger">₫ 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-primary mt-3">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

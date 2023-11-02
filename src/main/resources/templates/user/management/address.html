@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Danh sách địa chỉ</title>
+</head>
+<body>
+<main>
+    <div style="margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1300px;" class="container">
+    <div  class="row m-5">
+        <section th:replace="~{/user/management/section::section}"> </section>
+        <article class="col-md-8 " >
+            <h3 style="font-weight:100">Địa chỉ giao hàng</h3>
+            <main style="background-color: #F7F6F6; min-height: 240px;">
+                <ul class="address-infor--list">
+                    <li>Nguyễn Minh Duy</li>
+                    <li>0385449256</li>
+                    <li>557, đường Phạm Văn Đồng, phường 13, quận Bình Thạnh</li>
+                </ul>
+                <ul class="address-infor--list">
+                    <li>Phạm Minh Phú</li>
+                    <li>0966185233</li>
+                    <li>14 Ng. 8B P. Vũ Thạnh, Chợ Dừa, Đống Đa, Hà Nội</li>
+                </ul>
+            </main>
+        </article>
+    </div>
+</div>
+</main>
+</body>
+</html>

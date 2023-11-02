@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Đơn đặt hàng của bạn</title>
+</head>
+
+<body>
+    <main>
+        <div style="margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1300px;" class="container">
+        <div class="row m-5">
+            <section th:replace="~{/user/management/section::section}"> </section>
+            <article class="col-md-8 ">
+                <div class="row">
+                    <h3 class="management-order--title">Quản lý đơn hàng</h3>
+                </div>
+                <div class="row mt-3">
+                    <ul class="management-order--status">
+                        <li class="order-staus--active">Tất cả</li>
+                        <li>Chờ thanh toán</li>
+                        <li>Đang giao</li>
+                        <li>Hoàn thành</li>
+                        <li>Đã hủy</li>
+                    </ul>
+                </div>
+                <div class="row mt-3 management-order-group-search">
+                    <i class="bi bi-search" style="color:#7f7fd5"></i>
+                    <input class="management-order--search" type="text" placeholder="Tìm kiếm sản phẩm">
+                </div>
+                <div class="row management-order-main mt-3">
+                    <p class="order-main--title">
+                        <i class="bi bi-truck" style="margin-right: 10px; color: #7f7fd5"></i>
+                        Giao Hàng thành công
+                    </p>
+                    <hr>
+                    <ul class="order-main-product">
+                        <li>
+                            <div class="order-main-product-left">
+                            <img width="100px;" src="/images/product/product1.png" alt="">
+                            <div class="product-left-title">
+                                <p>Tên sản phẩm</p>
+                                <p>x 2</p>
+                            </div>
+                            </div>
+                            <div class="order-main-product--right">
+                                đ 250.000
+                            </div>
+                        </li>
+                        <li>
+                            <div class="order-main-product-left">
+                            <img width="100px;" src="/images/product/product1.png" alt="">
+                            <div class="product-left-title">
+                                <p>Tên sản phẩm</p>
+                                <p>x 2</p>
+                            </div>
+                            </div>
+                            <div class="order-main-product--right">
+                                đ 250.000
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="order-product-amount">
+                        <div class="amount-price d-flex justify-content-between">
+                            <span>TỔNG TIỀN:</span>
+                            <span>đ 500.000</span>
+                        </div>
+                        <div class="amount-btn">
+                            <a class="btn" href="/management/order/detail" style="border: 1px solid #7f7fd5; border-radius:5px;">Chi tiết đơn hàng</a>
+                            <button class="btn btn-danger">Mua lại</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

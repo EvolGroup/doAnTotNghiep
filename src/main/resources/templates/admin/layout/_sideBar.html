@@ -13,161 +13,91 @@
 		id="accordionSidebar">
 
 		<!-- Sidebar - Brand -->
-		<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
-			<div class="sidebar-brand-text mx-2">EVOL ADMIN</div>
-		</a>
-		<hr class="bg-light">
+		    <!-- Page Wrapper -->
+			<div id="wrapper">
+
+				<!-- Sidebar -->
+				<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 		
-		<div class="accordion" id="accordionExample">
-			<div class="accordion-item">
-			  <h2 class="accordion-header" id="headingOne">
-				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				  Quản lý sản phẩm
-				</button>
-			  </h2>
-			  <div id="collapseOne" class="accordion-collapse collapse show rounded" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-					<div class="accordion-header text-uppercase ms-3 fw-bold">Quản lý sản phẩm</div>
-					<div class="accordion-body">
-
+					<!-- Sidebar - Brand -->
+					<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+						<div class="sidebar-brand-icon rotate-n-15">
+							<i class="fas fa-laugh-wink"></i>
+						</div>
+						<div class="sidebar-brand-text mx-3">EVOL STORE</div>
+					</a>
+		
+					<!-- Divider -->
+					<hr class="sidebar-divider my-0">
+		
+					<!-- Nav Item - Dashboard -->
+					<li class="nav-item active">
+						<a class="nav-link" th:href="@{/admin}">
+							<i class="fas fa-fw fa-tachometer-alt"></i>
+							<span>Dashboard</span></a>
+					</li>
+		
+					<!-- Divider -->
+					<hr class="sidebar-divider">
+		
+					<!-- Heading -->
+					<div class="sidebar-heading">
+						Management
 					</div>
-			  </div>
-			</div>
-			<div class="accordion-item">
-			  <h2 class="accordion-header" id="headingTwo">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				  Quản lý đơn hàng
-				</button>
-			  </h2>
-			  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
-				  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				</div>
-			  </div>
-			</div>
-			<div class="accordion-item">
-			  <h2 class="accordion-header" id="headingThree">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				  Kế toán
-				</button>
-			  </h2>
-			  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
-				  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				</div>
-			  </div>
-			</div>
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="headingThree">
-				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					Phản hồi
-				  </button>
-				</h2>
-				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-				  <div class="accordion-body">
-					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				  </div>
-				</div>
-			  </div>
-			  <div class="accordion-item">
-				<h2 class="accordion-header" id="headingThree">
-				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					Phân quyền người dùng
-				  </button>
-				</h2>
-				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-				  <div class="accordion-body">
-					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				  </div>
-				</div>
-			  </div>
-			  <div class="accordion-item">
-				<h2 class="accordion-header" id="headingThree">
-				  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					Thống kê
-				  </button>
-				</h2>
-				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-				  <div class="accordion-body">
-					<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-				  </div>
-				</div>
-			  </div>
-		  </div>
-		  
-		<!-- <li class="nav-item">
-			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct"
-				aria-expanded="false" aria-controls="collapseProduct">
-				<i class="bi bi-card-list"></i>
-				<span>Quản lý sản phẩm</span>
-			</a>
-			<div id="collapseProduct" class="collapse show" aria-labelledby="headingBootstrap"
-				data-parent="#accordionSidebar">
-				<div class="bg-white py-2 collapse-inner rounded">
-					<h6 class="collapse-header text-uppercase">Quản lý sản phẩm</h6>
-					<a class="collapse-item" href="alerts.html">Danh sách sản phẩm</a>
-					<a class="collapse-item" href="buttons.html">Thao tác</a>
-				</div>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOrder"
-				aria-expanded="false" aria-controls="collapseBootstrap">
-				<i class="bi bi-card-list"></i>
-				<span>Quản lý đơn hàng</span>
-			</a>
-			<div id="collapseOrder" class="collapse show" aria-labelledby="headingBootstrap"
-				data-parent="#accordionSidebar">
-				<div class="bg-white py-2 collapse-inner rounded">
-					<h6 class="collapse-header text-uppercase">Quản lý đơn hàng</h6>
-					<a class="collapse-item" href="alerts.html">Tất cả đơn hàng</a>
-					<a class="collapse-item" href="buttons.html">Chờ xác nhận</a>
-					<a class="collapse-item" href="buttons.html">Đang chuẩn bị hàng</a>
-					<a class="collapse-item" href="buttons.html">Đang giao</a>
-					<a class="collapse-item" href="buttons.html">Đã hoàn thành</a>
-					<a class="collapse-item" href="buttons.html">Bị hủy</a>
-				</div>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-				aria-expanded="false" aria-controls="collapseBootstrap">
-				<i class="bi bi-card-list"></i>
-				<span>Kế toán</span>
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-				aria-expanded="false" aria-controls="collapseBootstrap">
-				<i class="bi bi-card-list"></i>
-				<span>Phản hồi</span>
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-				aria-expanded="false" aria-controls="collapseBootstrap">
-				<i class="bi bi-card-list"></i>
-				<span>Phân quyền người dùng</span>
-			</a>
-			<div id="collapseBootstrap" class="collapse show" aria-labelledby="headingBootstrap"
-				data-parent="#accordionSidebar">
-				<div class="bg-white py-2 collapse-inner rounded">
-					<h6 class="collapse-header text-uppercase">Phân quyền người dùng</h6>
-					<a class="collapse-item" href="alerts.html">Danh sách người dùng</a>
-					<a class="collapse-item" href="buttons.html">Phân quyền</a>
-				</div>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-				aria-expanded="false" aria-controls="collapseBootstrap">
-				<i class="bi bi-card-list"></i>
-				<span>Thống kê</span>
-			</a> 
-		</li>-->
 
+		
+					<!-- Nav Item - Product -->
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/admin/product}" >
+							<i class="bi bi-list-task"></i>
+							<span>Sản phẩm</span></a>
+					</li>
+		
 
+					<!-- Nav Item - Order -->
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/admin/order}">
+							<i class="bi bi-cart4"></i>
+							<span>Đơn hàng</span></a>
+					</li>
 
+					<!-- Nav Item - authorization -->
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/admin/authorization}">
+							<i class="bi bi-person-square"></i>
+							<span>Phân quyền người dùng</span></a>
+					</li>
 
+					<!-- Nav Item - Payment -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="bi bi-calculator"></i>
+							<span>Thanh toán</span></a>
+					</li>
+
+					<!-- Nav Item - Statistic -->
+					<li class="nav-item">
+						<a class="nav-link"  th:href="@{/admin/report}">
+							<i class="bi bi-bar-chart"></i>
+							<span>Thống kê</span></a>
+					</li>
+		
+					<!-- Divider -->
+					<hr class="sidebar-divider d-none d-md-block">
+		
+					<!-- Sidebar Toggler (Sidebar) -->
+					<!-- <div class="text-center d-none d-md-inline">
+						<button class="rounded-circle border-0" id="sidebarToggle"></button>
+					</div> -->
+		
+					<!-- Sidebar Message -->
+					<!-- <div class="sidebar-card d-none d-lg-flex">
+						<img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+						<p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+						<a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+					</div> -->
+		
+				</ul>
 	</ul>
 </body>
 

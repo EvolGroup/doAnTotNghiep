@@ -10,8 +10,5 @@ public class AdHomeController {
 		return "admin/home";
 	}
 	
-	@RequestMapping("admin/product/view")
-	public String productManage() {
-		return "admin/product/view";
-	}
+
 }

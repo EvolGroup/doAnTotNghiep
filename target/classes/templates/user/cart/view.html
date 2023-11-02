@@ -2,75 +2,115 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evolshop - Giỏ hàng</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolshop - Giỏ hàng</title>
 </head>
 
 <body>
-    <main>
-        <div style="margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        width: 1300px;"  class="container">
-            <div class="row " >
-                <div class="col-md-8 "  >
-                    
-                    <table class="table table-secondary cart_table">
-                        <thead>
-                          <tr class="border-dark">
+  <main>
+    <div style="margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1300px;" class="container mt-5">
+      <div class="row ">
+        <div class="col-md-9 ">
+          <table class="table table-secondary cart_table ">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Sản phẩm</th>
+                <th scope="col">Đơn giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Thành tiền</th>
+                <th scope="col"></th>
+              </tr>
+              <tr style="height: 10px;">
+              </tr>
+            </thead>
+            <tbody style="background-color: #F7F6F6;">
+              <tr class="border-dark-row" style="vertical-align: middle;">
+                <th scope="row"><input type="checkbox" name="productSelect" id="productSelect"></th>
+                <td><img src="/images/product/product1.png" style="width:100px; margin-right: 15px;"
+                    class="card-img-top" alt="...">Áo 2
+                </td>
+                <td>160.000 vnđ</td>
+                <td>
+                  <div class="quantity buttons_added ms-4">
+                    <input id="minus" type="button" value="-" class="minus">
+                    <input style="background-color:#fff;" id="inputQuantity" type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode="">
+                    <input id="plus" type="button" value="+" class="plus">
+                  </div>
+                </td>
+                <td>160.000 vnđ</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr class="border-dark-row" style="vertical-align: middle;">
+                <th scope="row"><input type="checkbox" name="productSelect" id="productSelect"></th>
+                <td><img src="/images/product/product1.png" style="width:100px; margin-right: 15px;"
+                    class="card-img-top" alt="...">Áo 1
+                </td>
+                <td>160.000 vnđ</td>
+                <td>
+                  <div class="quantity buttons_added ms-4">
+                    <input id="minus" type="button" value="-" class="minus">
+                    <input style="background-color:#fff;" id="inputQuantity" type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode="">
+                    <input id="plus" type="button" value="+" class="plus">
+                  </div>
+                </td>
+                <td>160.000 vnđ</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
 
-                            <th scope="col"></th>
-                            <th scope="col">Sản phẩm</th>
-                            <th scope="col">Số lượng</th>
-                            <th scope="col">Thành tiền</th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="border-dark" style="vertical-align: middle;"> 
-                            <th scope="row"><input type="checkbox" name="productSelect" id="productSelect"></th>
-                            <td><img src="/images/product/product1.png" style="width:100px; margin-right: 15px;"  class="card-img-top" alt="...">Áo 2
-                            </td>
-                            <td><input type="number" min=1 value="1"></td>
-                            <td>160.000 vnđ</td>
-                            <td><i class="bi bi-trash"></i></td>
-                          </tr>
-                          <tr class="border-dark" style="vertical-align: middle;"> 
-                            <th scope="row"><input type="checkbox" name="productSelect" id="productSelect"></th>
-                            <td><img src="/images/product/product1.png" style="width:100px; margin-right: 15px;"  class="card-img-top" alt="...">Áo 1
-                            </td>
-                            <td><input type="number" min=1 value="1"></td>
-                            <td>160.000 vnđ</td>
-                            <td><i class="bi bi-trash"></i></td>
-                          </tr>
-                          <tr>
-                            <td colspan="5" style="text-align:unset!important;"> 
-                                <button class="btn btn-dark">Tiếp tục mua hàng</button>
-
-                            </td>     
-                        </tr>
-                        </tbody>
-                      </table>
-                </div>
-                <div class="col-md-4 " style="background-color: #e2e3e5;padding: 20px; height: fit-content;border-radius:30px">
-                    <p style="text-align: center;">TỔNG SỐ ĐƠN HÀNG</p>
-                    <hr style="border: 1px solid #000;">
-                    <ul class="cart_checkout" style="list-style: none;padding: 0; ">
-                        <li><span class="cart_checkout-text">Tạm tính:</span> <span class="cart_checkout-number">320.000 vnđ</span></li>
-                        <li><span class="cart_checkout-text">Khuyến mãi</span> <span class="cart_checkout-number">0 vnđ</span></li>
-                        <hr style="border: 1px solid #000;">
-                        <li><span class="cart_checkout-text">Tổng cộng:</span><span class="cart_checkout-number">320.000 vnđ</span></li>
-                    </ul>
-                    <div style="width: 100%; text-align: end;">
-                        <button class="btn btn-dark">Thanh toán</button>
-                    </div>
-                    
-
-                </div>
-            </div>
+            </tbody>
+          </table>
         </div>
-    </main>
+        <div class="col-md-3 ">
+          <div class="row p-3 " style="background-color:#F7F6F6; ">
+            <ul class="order-detail-address">
+              <li class="d-flex justify-content-between p-0 "><span style="font-weight:100">Địa chỉ</span><span style="font-weight: 100;">Sửa đổi</span></li>
+              <li style="font-weight:bold;">Nguyễn Văn Huy | 0352165977</li>
+              <li>14 Ng. 8B P. Vũ Thạnh, Chợ Dừa, Đống Đa, Hà Nội</li>
+            </ul>
+          </div>
+          <div class="row mt-3" style="background-color: #F7F6F6;padding: 20px; height: fit-content;">
+
+            <p class="d-flex justify-content-between p-0"><span>Số lượng: </span> <span>x8</span></p>
+            <ul class="cart_checkout" style="list-style: none;padding: 0; ">
+              <li><span class="cart_checkout-text">Tạm tính:</span> <span class="cart_checkout-number">320.000
+                  vnđ</span>
+              </li>
+              <li><span class="cart_checkout-text">Khuyến mãi:</span> <span class="cart_checkout-number">0 vnđ</span>
+              </li>
+              <li><span class="cart_checkout-text">Phí vận chuyển:</span> <span class="cart_checkout-number">20.000
+                  vnđ</span></li>
+              <hr style="border: 1px solid #000;">
+              <li><span class="cart_checkout-text">Tổng cộng:</span><span class="cart_checkout-number">340.000
+                  vnđ</span>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="row mt-3" style="background-color: #F7F6F6;padding: 20px; height: fit-content;">
+            <p >Hình thức thanh toán</p>
+            <div>
+              <input type="radio" name="payment" id="online" class="me-3"> Chuyển khoản
+            </div>
+            <div>
+              <input type="radio" name="payment" id="cod" class="me-3"> Thanh toán khi nhận hàng
+            </div>
+              <button class="btn btn-danger mt-3">Thanh toán</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/cart.js"></script>
+
+  </main>
 </body>
 
 </html>

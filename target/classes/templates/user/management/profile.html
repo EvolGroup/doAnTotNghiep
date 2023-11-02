@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Thông tin tài khoản</title>
+</head>
+
+<body>
+    <main>
+        <div style="margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1300px;" class="container">
+        <div class="row m-5">
+            <section th:replace="~{/user/management/section::section}"> </section>
+            <article class="col-md-8 " >
+                <div class="row">
+                    <h3 style="font-weight: 100;">Quản lý tài khoản</h3>
+                </div>
+                <div style="background-color: #F7F6F6; border-radius: 10px;padding: 30px;">
+
+                
+                <div class="row"  style="align-items: center;">
+                    <div class="col-md-3 mt-3 profile-upload">
+                        <img class="cust-avatar" src="/images/users/avatar2.png" style="width: 100%;height:auto;">
+                        <label for="fileInput">
+                            <i class="bi bi-pen-fill"></i>
+                        </label>
+                        <input type="file" name="file" id="fileInput" style="display: none;">
+                    </div>
+                    <div class="col-md-9 mt-3 pe-5 ps-5 profile-form" >
+                        <div class="mb-3 d-flex" >
+                            <label for="">Họ và tên :</label>
+                            <input type="text" name="fullname" id="fullname" style="width: 50%;">
+                        </div>
+                        <div class="mb-3 d-flex" >
+
+                            <label for="">Email :</label>
+                            <input type="email" name="email" id="email" style="width: 50%;">
+                        </div>
+                        <div class="mb-3 d-flex" >
+                            <label for="">Số điện thoại :</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber" style="width: 50%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="mb-3 d-flex" >
+                        <label for="">Ngày sinh :</label>
+                        <select style="margin: 0 15px; background-color: transparent; border-radius: 5px;" id="date-day">
+                            <option value="">Day</option>
+                        </select>
+                        <select style="margin: 0 15px; background-color: transparent; border-radius: 5px;" id="date-month" onchange="changeMonth()">
+                            <option value="">Month</option>
+
+                        </select>
+                        <select style="margin: 0 15px; background-color: transparent; border-radius: 5px;" id="date-year" onchange="changeYear()">
+                            <option value="">Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class=" mt-3">
+                    <label for="">Giới tính :</label>
+                    <input style="margin:0 15px;" type="radio" name="gender" value="male" id="male">Nam
+                    <input style="margin:0 15px;" type="radio" name="gender" value="female" id="female">Nữ
+                    <input style="margin:0 15px;" type="radio" name="gender" value="other" id="other">Khác
+                </div>
+                <div class="mt-3">
+                    <label for="nationality">Quốc tịch :</label>
+
+                    <select style="margin: 0 15px; background-color: transparent; border-radius: 5px;" id="nationality" >
+                        <option value="VN">Việt Nam</option>
+                        <option value="US">United states</option>
+                        <option value="JP">Nhật Bản</option>
+                    </select>
+                </div>
+                <div class="row mt-3" style="justify-content: center;">
+                    <button class="btn" style="background-color: #7f7fd5; color: #fff;padding: 10px;width: 30%;">Lưu thay đổi</button>
+                </div>
+            </div>
+            </article>
+        </div>
+        </div>
+        <script src="/js/profile.js"></script>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{/user/layout/layout::areas(~{::title},~{::main})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolshop - Thiết lập mật khẩu</title>
+</head>
+<body>
+<main>
+    <div style="margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 1300px;" class="container">
+    <div class="row m-5">
+        <section th:replace="~{/user/management/section::section}"> </section>
+        <article class="col-md-8 " >
+            <h3 style="font-weight:100">Chi tiết đơn hàng</h3>
+            <div class="row" style="background-color:#F7F6F6;">
+                <a href="/management/order" class="col-md-6 fs-5">
+                    <i style="color:#999;" class="bi bi-box-arrow-left "></i>
+                </a>
+                <span style="    text-align: end;
+                margin: auto;
+                color: #999;" class="col-md-6">Mã đơn hàng: EV0521XP251A</span>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 ps-0" >
+                    <div class="p-3 " style="background-color:#F7F6F6; ">
+                        <ul class="order-detail-address">
+                            <li>Địa chỉ</li>
+                            <li style="font-weight:bold;">Nguyễn Văn Huy  |  0352165977</li>
+                            <li>14 Ng. 8B P. Vũ Thạnh, Chợ Dừa, Đống Đa, Hà Nội</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 pe-0" >
+                    <div class="p-3 " style="background-color:#F7F6F6; height: 100%;">
+                        <ul class="order-detail-payment">
+                            <li>Hình thức thanh toán</li>
+                            <li>Chuyển khoản</li>
+                            <li style="color: #ff0000;">Thanh toán thành công</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="row management-order-main mt-3">
+                    <p class="orderDetail-main--title">
+                        Sản phẩm
+                    </p>
+                    <ul class="order-main-product">
+                        <li>
+                            <div class="order-main-product-left">
+                            <img width="100px;" src="/images/product/product1.png" alt="">
+                            <div class="product-left-title">
+                                <p>Tên sản phẩm</p>
+                                <p>x 2</p>
+                            </div>
+                            </div>
+                            <div class="order-main-product--right">
+                                đ 250.000
+                            </div>
+                        </li>
+                        <li>
+                            <div class="order-main-product-left">
+                            <img width="100px;" src="/images/product/product1.png" alt="">
+                            <div class="product-left-title">
+                                <p>Tên sản phẩm</p>
+                                <p>x 2</p>
+                            </div>
+                            </div>
+                            <div class="order-main-product--right">
+                                đ 250.000
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="order-product-amount">
+                        <div class="amount-price d-flex justify-content-between">
+                            <span>Tổng tiền:</span>
+                            <span>đ 500.000</span>
+                        </div>
+                        <div class="amount-price d-flex justify-content-between">
+                            <span>Phí giảm giá:</span>
+                            <span>đ 0</span>
+                        </div>
+                        <div class="amount-price d-flex justify-content-between">
+                            <span>Phí vận chuyển:</span>
+                            <span>đ 20.000</span>
+                        </div>
+                        <div class="amount-price d-flex justify-content-between">
+                            <span>Thành tiền:</span>
+                            <span>đ 520.000</span>
+                        </div>
+                        <div class="amount-btn">
+                            <a class="btn" href="/management/order/detail" style="background-color: #7f7fd5;color: #fff; border-radius:5px;">Xem hóa đơn</a>
+                            <button class="btn btn-danger">Mua lại</button>
+                        </div>
+                    </div>
+                </div>
+        </article>
+    </div>
+    </div>
+</main>
+</body>
+</html>

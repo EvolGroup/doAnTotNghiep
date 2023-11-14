@@ -1,0 +1,40 @@
+
+/* management order  */
+.toolbar > form > input{
+    border: 1px ridge black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 0px 10px;
+}
+
+.text-wrap--2 {
+
+    display: -webkit-box;
+    /* text-transform: uppercase; */
+    max-width: 200px;
+    margin: 0 auto;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-body{
+    color: black;
+}
+
+/* .card-chart{
+    margin: 20px 15px;
+    padding: 10px;
+    border: 1px ridge #ced4da;
+    border-radius: 5px;
+} */
+
+#chartProduct{
+    width: 100%;
+}
+#canvas{
+    width: 100%;
+}

@@ -9,7 +9,59 @@
 
 <body>
     <main>
-        Dashboard
+        <div class="row m-0">
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <div class="text-primary fw-bolder fs-4">Doanh thu ngày</div>
+                <div class="d-flex justify-content-between">
+                    <div class="fs-5">8.000.000 <span>VND</span></div>
+                    <div class="fs-5"><i class="bi bi-currency-dollar"></i></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <div class="text-success fw-bolder fs-4">Doanh thu tháng</div>
+                <div class="d-flex justify-content-between">
+                    <div class="fs-5">25.000.000 <span>VND</span></div>
+                    <div class="fs-5"><i class="bi bi-currency-dollar"></i></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <div class="text-info fw-bolder fs-4">Đơn đặt hàng</div>
+                <div class="d-flex justify-content-between">
+                    <div class="fs-5">35 </div>
+                    <div class="fs-5"><i class="bi bi-cart-fill"></i></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <div class="text-danger fw-bolder fs-4">Đơn chưa xử lí</div>
+                <div class="d-flex justify-content-between">
+                    <div class="fs-5">18</div>
+                    <div class="fs-5"><i class="bi bi-boxes"></i></div>
+                </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-3">
+                <div class="col-sm-7 card-chart">
+                    <div class="card">
+                        <div class="card-header">Earning overview</div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-5 card-chart">
+                    <div class="card">
+                        <div class="card-header">Product consumption</div>
+                        <canvas id="chartProduct"></canvas>
+                    </div>       
+                </div> 
+            </div>
+        </div>
         
     </main>
 </body>

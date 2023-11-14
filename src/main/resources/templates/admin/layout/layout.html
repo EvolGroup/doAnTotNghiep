@@ -19,8 +19,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
   	<link rel="stylesheet" th:href="@{/css/sb-admin-2.css}">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/style-admin.css}">
     <link rel = "icon" th:href = "@{/images/logo/logoshop.png}"
         type = "image/x-icon">
         
@@ -48,7 +49,7 @@
     </style>
 </head>
 <body >
-	<div class="row">
+	<div class="row me-0 gx-0">
 		<div class="col-2">
 			<div th:replace="~{/admin/layout/_sideBar::sidebar}"></div>
 		</div>
@@ -64,5 +65,7 @@
 	<script th:src="@{/js/jquery.easing.js}"></script>
     <script th:src="@{/js/sb-admin-2.js}"></script>
 	<script th:src="@{/js/main.js}"></script>
+	<script th:src="@{/js/Chart.min.js}"></script>
+	<script th:src="@{/js/chart.js}"></script>
 </body>
 </html>

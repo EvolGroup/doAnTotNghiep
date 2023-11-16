@@ -35,7 +35,7 @@
                     <th>Khách hàng</th>
                     <th>Địa chỉ</th>
                     <th>Cổng thanh toán</th>
-                    <th>Thu KH</th>
+                    <!-- <th>Thu KH</th> -->
                     <th>Trạng thái</th>
                     <th>Ghi chú</th>
                     <th>Thời gian</th>
@@ -51,7 +51,7 @@
                             <span class="text-wrap--2">đường Hùng Vương, Hai Bà Trưng, Hà nội</span>
                         </td>
                         <td>Chuyển khoản ngân hàng</td>
-                        <td>3.560.000 đ</td>
+                        <!-- <td>3.560.000 đ</td> -->
                         <td style="color: orange;">Chờ xác nhận</td>
                         <td></td>
                         <td>2023-09-24<br>10:03</td>
@@ -66,7 +66,7 @@
                             <span class="text-wrap--2">đường Hùng Vương, Hai Bà Trưng, Hà nội</span>
                         </td>
                         <td>Chuyển khoản ngân hàng</td>
-                        <td>3.560.000 đ</td>
+                        <!-- <td>3.560.000 đ</td> -->
                         <td style="color: green;">Thành công</td>
                         <td>Không giao trước 11h</td>
                         <td>2023-09-24<br>10:03</td>
@@ -106,10 +106,6 @@
                   <input type="text" class="form-control" id="" value="Chuyển tiền ngân hàng" disabled >
                 </div>
                 <div class="col-md-6">
-                    <label class="form-label">Cổng thanh toán</label>
-                    <input type="text" class="form-control" id="" value="Chuyển tiền ngân hàng" disabled >
-                  </div>
-                <div class="col-md-4">
                   <label for="inputState" class="form-label">Trạng thái</label>
                   <select id="inputState" class="form-select">
                     <option selected>Chờ xác nhận</option>
@@ -117,9 +113,13 @@
                     <option>Thành công</option>
                   </select>
                 </div>
-                <div class="col">
+                <div class="col-md-12">
                   <label for="inputZip" class="form-label">Số tiền</label>
                   <input type="text" class="form-control" id="inputZip" value="3.200.000 đ" disabled>
+                </div>
+                <div class="col">
+                  <label for="inputZip" class="form-label">Ghi chú</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">ghi chú </textarea>
                 </div>
                 <div class="col-12 d-flex justify-content-end">
                   <button type="submit" class="btn btn-primary">Cập nhật</button>
